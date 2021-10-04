@@ -1,0 +1,8 @@
+---
+- name: first play 
+  hosts: all
+  tasks:
+    - name: Created the given user 
+      user:
+        name: "{{ user_name }}"
+        state: present 
