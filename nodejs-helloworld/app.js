@@ -2,7 +2,7 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('You should hire Akshay, I recommend him as a Wizard!   - Prof. Dumbledore');
+  res.send('You should hire Akshay, I highly recommend him as a Wizard!   - Prof. Dumbledore');
 });
 
 app.listen(8080, function () {
