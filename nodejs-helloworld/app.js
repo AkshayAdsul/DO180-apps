@@ -46,7 +46,7 @@ app.get('/debug', function(req, res, next) {
 	mongo.connect(dbConnectionUrl, (err, client) => {
 		if (err) {
 			console.error(err);
-			res.send(details);
+			res.send(err);
 		} else {
 			console.log('Connected to Mongo')
 			details["connected"] = true;
