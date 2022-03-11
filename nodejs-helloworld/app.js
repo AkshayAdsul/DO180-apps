@@ -30,6 +30,8 @@ else if (process.env.MONGODB_URL){
 					+ dbName;
 }
 
+console.log('Mongo url:', dbConnectionUrl);
+
 app.get('/', function (req, res) {
   res.send('You should hire Akshay, I highly recommend him as a Wizard!   - Prof. Dumbledore');
 });
@@ -43,7 +45,8 @@ app.get('/debug', function(req, res, next) {
 
 	mongo.connect(dbConnectionUrl, (err, client) => {
 		if (err) {
-			console.error(err)
+			console.error(err);
+			res.send(details);
 		} else {
 			console.log('Connected to Mongo')
 			details["connected"] = true;
