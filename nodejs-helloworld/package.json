@@ -4,7 +4,7 @@
   "description": "Hello World!",
   "main": "app.js",
   "scripts": { "start": "node app.js" },
-  "author": "Red Hat Training",
+  "author": "Akshay Adsul",
   "license": "ASL",
   "dependencies": {
     "express": "4.14.x",
