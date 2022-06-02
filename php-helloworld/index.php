@@ -1,3 +1,3 @@
 <?php
-print "Hello, Simon . Welcome to the Land of Openshift " . PHP_VERSION . "\n";
+print "Hello, Simon . Welcome to the Land of Magic " . PHP_VERSION . "\n";
 ?>
