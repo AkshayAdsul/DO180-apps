@@ -33,7 +33,7 @@ else if (process.env.MONGODB_URL){
 console.log('Mongo url:', dbConnectionUrl);
 
 app.get('/', function (req, res) {
-  res.send('Hello Australia, New Zealand, India');
+  res.send('Hello CBA');
 });
 
 app.get('/debug', function(req, res, next) {
